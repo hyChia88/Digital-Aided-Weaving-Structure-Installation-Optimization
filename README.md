@@ -5,7 +5,7 @@ Coorditor: Mr.Wei from Hebei Lu Cheng Machinery Co.
 Date: 2024 Spring  
 
 ## Overview  
-The Label Machine Control App is part of the research project “Digitally Aided Construction and Process Optimization for Weaving Structures”. The app controls an automatic rod marking system, designed to label round or rectangular rods (3mm–20mm) with customized codes at specific distances as defined in a pre-generated CSV file. This system streamlines the labeling process for weaving structures, significantly improving efficiency.
+The Label Machine Control App is part of the research project “Digital Aided Installation and Optimization for Weaving Structures”. The app controls an automatic rod marking system, designed to label round or rectangular rods (3mm–20mm) with customized codes at specific distances as defined in a pre-generated CSV file. This system streamlines the labeling process for weaving structures, significantly improving efficiency.
 
 An example of weaving structure:  
 ![image](https://github.com/user-attachments/assets/c60d24bf-2d28-4028-952b-8c4f106ba7b2)
