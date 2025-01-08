@@ -11,10 +11,6 @@ An example of weaving structure:
 ![image](https://github.com/user-attachments/assets/02b4bc96-e3de-4e11-8339-9bc1c4ed72f8)
 
 
-The printing result by the system on a 3mm rod:  
-![image](https://github.com/user-attachments/assets/a4be7b68-195b-4741-8983-58104d90cf5b)
-
-
 The design draft of the machine:  
 ![image](https://github.com/user-attachments/assets/bf51571a-33a6-4672-9e76-bf55be7607aa)
 ![image](https://github.com/user-attachments/assets/b7f1adda-6612-48db-b894-be40f55b5e41)
