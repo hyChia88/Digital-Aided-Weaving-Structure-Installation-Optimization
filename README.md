@@ -23,3 +23,16 @@ The final result of machine:
 This app supports the hardware I designed for automatic rod marking. The hardware enables precise, random-position labeling on weaving rods, addressing challenges in manual rod marking for bending-active gridshell structures.  
 
 The system has improved the rod installation process by approximately 33% compared to manual methods. It enhances accuracy and efficiency, especially in projects requiring high customization, such as those described in Huang, W., Wu, C., Hu, J., & Gao, W. (2022). Weaving structure: A bending-active gridshell for freeform fabrication (DOI: 10.1016/j.autcon.2022.104184).  
+
+## Features:  
+- Precise Labeling: Marks rods with millimeter-level precision.
+- Customizable Positions: Prints labels at random distances based on project-specific requirements.
+- Multi-Colour Printing: The system dynamically selects the ink colour based on the last digit of the number code. For example:
+    Codes ending in 0–3 are printed in Red.
+    Codes ending in 4–6 are printed in Blue.
+    Codes ending in 7–9 are printed in Green.
+- Supports Various Rod Types: Works with rods of different cross-sections and diameters (3mm–20mm).
+- CSV Integration: Automatically processes labeling instructions from a CSV file.
+
+## Application:
+The labeled rods simplify the assembly process for bending-active gridshell structures. Previously a manual task, labeling is now automated, enhancing speed and accuracy. Below are examples of real-world projects where this system was applied.
