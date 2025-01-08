@@ -1,23 +1,29 @@
-# Label Machine Control App for Weaving Rods  
+# Digital-Aided-Weaving-Structure-Installation-Optimization
 Author: Chia Hui Yen  
 Mentor: Professor Huang Weixin  
 Coorditor: Mr.Wei from Hebei Lu Cheng Machinery Co.  
 Date: 2024 Spring  
 
 ## Overview  
-The Label Machine Control App is part of the research project “Digital Aided Installation and Optimization for Weaving Structures”. The app controls an automatic rod marking system, designed to label round or rectangular rods (3mm–20mm) with customized codes at specific distances as defined in a pre-generated CSV file. This system streamlines the labeling process for weaving structures, significantly improving efficiency.
+This library included the code of Label Machine Control App. This is part of the research project “Digital Aided Installation and Optimization for Weaving Structures”. The app controls an automatic rod marking system, designed to label round or rectangular rods (3mm–20mm) with customized codes at specific distances as defined in a pre-generated CSV file. This system streamlines the labeling process for weaving structures, significantly improving efficiency.  
 
 An example of weaving structure:  
-![image](https://github.com/user-attachments/assets/c60d24bf-2d28-4028-952b-8c4f106ba7b2)
+![image](https://github.com/user-attachments/assets/02b4bc96-e3de-4e11-8339-9bc1c4ed72f8)
+
 
 The printing result by the system on a 3mm rod:  
 ![image](https://github.com/user-attachments/assets/a4be7b68-195b-4741-8983-58104d90cf5b)
 
-The design draft of machine:  
-![image](https://github.com/user-attachments/assets/bf51571a-33a6-4672-9e76-bf55be7607aa)
 
-The final result of machine:
-![image](https://github.com/user-attachments/assets/7e1912dc-da8b-405d-8171-2b76215281b5)
+The design draft of the machine:  
+![image](https://github.com/user-attachments/assets/bf51571a-33a6-4672-9e76-bf55be7607aa)
+![image](https://github.com/user-attachments/assets/b7f1adda-6612-48db-b894-be40f55b5e41)
+![image](https://github.com/user-attachments/assets/cc4e3a9f-e56c-49d6-84d6-469e8ff6a964)
+
+
+The final result of the machine:
+![image](https://github.com/user-attachments/assets/0623a1ea-77a6-4372-9be9-f6a77336d4f6)
+
 
 ## Description:
 This app supports the hardware I designed for automatic rod marking. The hardware enables precise, random-position labeling on weaving rods, addressing challenges in manual rod marking for bending-active gridshell structures.  
