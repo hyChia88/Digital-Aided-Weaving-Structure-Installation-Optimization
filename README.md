@@ -17,7 +17,6 @@ Weaving Structure details can be found in the research paper:
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/02b4bc96-e3de-4e11-8339-9bc1c4ed72f8" alt="Weaving Structure Example" width="800"/>
-<em>Figure 1: Example of a completed weaving structure installation</em>
 </p>
 
 I encountered several challenges during previous installation work, which motivated this research project and the development of an installation aid system.
@@ -33,7 +32,7 @@ I encountered several challenges during previous installation work, which motiva
 </tr>
 <tr>
 <td colspan="2" align="center">
-<em>Figure: Installation process documentation from a previous weaving structure project</em>
+<em> The optimization direction for the Installation process for the weaving structure, right figure is an example of the Weaving structure that I participated</em>
 </td>
 </tr>
 </table>
