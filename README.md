@@ -41,19 +41,19 @@ Compare changes in sequence and displacement to understand the basic rules of th
 ![image](https://github.com/user-attachments/assets/6197931a-54d7-44e3-aabd-e488dbe618e2)
 
 ### (3) Generate Installation Guidelines:
-Use these rules to create helpful installation sequences for workers.  
-![result](https://github.com/user-attachments/assets/4daa9446-d2a5-49bd-a727-becfa8e5ca13)  
-
+Use these rules to create helpful installation sequences for workers. Below are some sample cases.  
+![re](https://github.com/user-attachments/assets/0d3591bd-e69c-4119-9ff3-c91725ae4cb9)
+![re2](https://github.com/user-attachments/assets/8e3dc30a-0cfa-4555-93ca-3f177dcc7614)
 
 
 ## Optimization (2): Development of an automatic rod marking system.  
 ### **Design Draft**
-<img src="https://github.com/user-attachments/assets/22eb9002-d08d-4fe4-802f-878a4dc6f411" alt="Machine Design Draft" width="350"/>
-</br>
-<img src="https://github.com/user-attachments/assets/86c00e8c-e232-4e80-88c8-eaedc4079a56" alt="process" width="600"/> 
+<div>
+    <img src="https://github.com/user-attachments/assets/22eb9002-d08d-4fe4-802f-878a4dc6f411" alt="Machine Design Draft" width="40%" style="float: left"/>
+    <img src="https://github.com/user-attachments/assets/86c00e8c-e232-4e80-88c8-eaedc4079a56" alt="process" width="60%" style="float: left"/>
+</div>  
 
-
-#### Final Machine
+### Final Machine
 <img src="https://github.com/user-attachments/assets/bfffeed1-4324-43eb-ad15-ed9dee3c3e99" alt="Final Machine"/>
 
 
