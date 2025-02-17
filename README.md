@@ -1,4 +1,4 @@
-# Weaving-Structure-Installation-Optimization-and-Automated
+# Weaving Structure Installation Optimization
 **Author:** Chia Hui Yen  
 **Mentor:** Professor Huang Weixin  
 **Coordinator:** Mr. Wei from Hebei Lu Cheng Machinery Co.  
