@@ -11,9 +11,9 @@ This project began with my participation in Prof. Huang Weixin’s research grou
 More details on weaving structures can be found in the following research paper:
 > Huang, W., Wu, C., Hu, J., & Gao, W. (2022). Weaving structure: A bending-active gridshell for freeform fabrication. Automation in Construction, 136, 104184.
 
-Initially, I conducted design optimization using a genetic algorithm (<a href="Networks.pdf" target="_blank">View Project</a>) and participated in several digital fabrication projects in Shenzhen and Beijing, China, as shown in the images below.
+Initially, I conducted design optimization using a genetic algorithm (<a href="https://hychia88.github.io/assets/pdfs/Networks.pdf" target="_blank">View Project</a>) and participated in several digital fabrication projects in Shenzhen and Beijing, China, as shown in the images below.
 
-During the Beijing project, I gained hands-on experience in the challenges of customizing fabrication for weaving structures. In Shenzhen, I worked with irregular bending-active structures, where I observed how improper assembly sequences could lead to significant instability. As part of this project, I contributed to the automation pipeline and integrated a water system into the installation (<a href="Droplet.pdf" target="_blank">Shenzhen Digital Fabrication Project Link↗</a>).
+During the Beijing project, I gained hands-on experience in the challenges of customizing fabrication for weaving structures. In Shenzhen, I worked with irregular bending-active structures, where I observed how improper assembly sequences could lead to significant instability. As part of this project, I contributed to the automation pipeline and integrated a water system into the installation (<a href="https://hychia88.github.io/assets/pdfs/Droplet.pdf" target="_blank">Shenzhen Digital Fabrication Project Link↗</a>).
 
 Through these experiences, I encountered multiple challenges in previous installation projects, which motivated me to further develop this research project and create an installation aid system.
 
