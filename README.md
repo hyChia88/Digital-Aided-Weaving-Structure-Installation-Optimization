@@ -6,30 +6,40 @@
 **Files:** grasshopper files and C++ program to transmit signal data between electronic components
 
 ## About the Project
+This project began with my participation in Prof. Huang Weixin’s research group, where I explored weaving structures—a lightweight, customizable structural system.
 
-This library contains the code for a Label Machine Control App, developed as part of the research project "Digital Aided Installation and Optimization for Weaving Structures". The system automates the labeling of round or rectangular rods (3mm–20mm) with customized codes at specific distances defined by CSV input, significantly improving weaving structure installation efficiency.
+More details on weaving structures can be found in the following research paper:
+> Huang, W., Wu, C., Hu, J., & Gao, W. (2022). Weaving structure: A bending-active gridshell for freeform fabrication. Automation in Construction, 136, 104184.
 
-## Background: Weaving Structure Installation Challenges
+Initially, I conducted design optimization using a genetic algorithm (<a href="assets/pdfs/Networks.pdf" target="_blank">View Project</a>) and participated in several digital fabrication projects in Shenzhen and Beijing, China, as shown in the images below.
 
-Weaving Structure details can be found in the research paper:  
-> Huang, W., Wu, C., Hu, J., & Gao, W. (2022). [Weaving structure: A bending-active gridshell for freeform fabrication](https://doi.org/10.1016/j.autcon.2022.104184). Automation in Construction, 136, 104184.
+During the Beijing project, I gained hands-on experience in the challenges of customizing fabrication for weaving structures. In Shenzhen, I worked with irregular bending-active structures, where I observed how improper assembly sequences could lead to significant instability. As part of this project, I contributed to the automation pipeline and integrated a water system into the installation (<a href="assets/pdfs/Droplet.pdf" target="_blank">Shenzhen Digital Fabrication Project Link↗</a>).
 
+Through these experiences, I encountered multiple challenges in previous installation projects, which motivated me to further develop this research project and create an installation aid system.
+
+Below is the **entire project development process**. Additionally, this repository contains the code for a Label Machine Control App, developed as part of the **Digital-Aided Installation and Optimization for Weaving Structures research project**. The system automates the labelling of round or rectangular rods (3mm–20mm) with customized codes at specific distances (defined via CSV input), significantly improving the efficiency of weaving structure installation. It was successfully implemented in a project in Bali, Indonesia, **where it improved installation efficiency by 33%.**
+
+The system transforms the previously manual task of rod labelling into an automated process, significantly improving the assembly of bending-active gridshell structures. This enhancement provides:
+- Automated labelling process
+- Improved installation accuracy
+- Increased assembly speed
+- Reduced human error
+
+</br>
 <p align="center">
-<img src="https://github.com/user-attachments/assets/02b4bc96-e3de-4e11-8339-9bc1c4ed72f8" alt="Weaving Structure Example" width="800"/>
+<img src="https://github.com/user-attachments/assets/02b4bc96-e3de-4e11-8339-9bc1c4ed72f8" alt="Weaving Structure Example" width="600"/>
+<img src="https://github.com/user-attachments/assets/92a2786a-2804-45dd-9c4b-10282c22f4ce" width="600"/>
 </p>
 
-I encountered several challenges during previous installation work, which motivated this research project and the development of an installation aid system.  
-
+- **Challenge (1): Unstable shape during installation**
 <p align="center">
-<img src="https://github.com/user-attachments/assets/92a2786a-2804-45dd-9c4b-10282c22f4ce" width="600"/>
-
-- **Challenge (1)**
 <img src="https://github.com/user-attachments/assets/e61ee5f0-ae94-47bc-b98b-6d64b8159844" width="800"/>
+</p>
 
-- **Challenge (2)**
+- **Challenge (2): Irregular connecting points lead to massive amount of manual labelling work**
+<p align="center">
 <img src="https://github.com/user-attachments/assets/98342d23-9ebe-4fa8-aee8-b60b8af6780e" width="800"/>
 </p>  
-
 
 ## Optimization (1): Optimization of the installation sequences 
 ### (1) Simulate the Installation Process:
@@ -58,9 +68,9 @@ Use these rules to create helpful installation sequences for workers. Below are 
 
 
 ## Result Improvement
-This application supports custom-designed hardware for automatic rod marking, enabling precise, random-position labeling on weaving rods. The system specifically addresses challenges in manual rod marking for bending-active gridshell structures.  
+This application supports custom-designed hardware for automatic rod marking, enabling precise, random-position labelling on weaving rods. The system specifically addresses challenges in manual rod marking for bending-active grid shell structures.  
 
-- **Installation Efficiency**: 33% reduced installation time through improved rod labeling process, enhancing overall efficiency for weaving structure fabrication
+- **Installation Efficiency**: 33% reduced installation time through an improved rod labelling process, enhancing overall efficiency for weaving structure fabrication
 - **Enhanced User Experience**: Improved label design with color-coded system for easier rod identification and assembly
 
 ### Rod Specifications
@@ -82,11 +92,3 @@ This application supports custom-designed hardware for automatic rod marking, en
 - **CSV Integration:** Automated processing of labeling instructions
 
 <img src="https://github.com/user-attachments/assets/0623a1ea-77a6-4372-9be9-f6a77336d4f6" alt="Final Result" />
-
-## Applications
-
-The system transforms the previously manual task of rod labeling into an automated process, significantly improving the assembly of bending-active gridshell structures. This enhancement provides:
-- Automated labeling process
-- Improved installation accuracy
-- Increased assembly speed
-- Reduced human error
