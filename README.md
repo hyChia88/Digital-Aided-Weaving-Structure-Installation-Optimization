@@ -3,7 +3,10 @@
 **Mentor:** Professor Huang Weixin  
 **Coordinator:** Mr. Wei from Hebei Lu Cheng Machinery Co.  
 **Date:** 2024 Spring  
-**Files:** grasshopper files and C++ program to transmit signal data between electronic components
+**Files:** 
+1. grasshopper files do simulations for data collection
+2. Python-based analysis optimizer, processes simulation data to determine the optimal assembly sequence that minimizes displacements and ensures stability
+3. Support machine design drawing and C++ hardware control program to transmit signal data between electronic components
 
 ## About the Project
 This project began with my participation in Prof. Huang Weixin’s research group, where I explored weaving structures—a lightweight, customizable structural system.
@@ -49,29 +52,29 @@ Run massive simulations to track how structures move and change during installat
 
 ### (2) Analysis of Sequence & Rod Performance
 Compare changes in sequence and displacement to understand the basic rules of the process.  
-Can be check at the file: Installation Sequences Optimization\seq_analysis.py 
+Can be check at the file: <a href ="Installation Sequences Optimization\seq_analysis.py"> seq_analysis.py </a>
 - tags_data: Dictionary containing different assembly sequences, where each sequence lists the rods in the order they are assembled.
 - data: Corresponding displacement values for each sequence, recording the maximum displacement at each step.
 - built_values: A predefined score for each rod indicating its ease of construction, comprehensively considering rod length, shape complexity, and number of nodes.
 
 #### Result:
-Multiple analyses: metric comparisons, influence factors by different metrics, final influence vs. built values, top sequence displacement curves, and optimal assembly sequence visualization.
+**Multiple analyses:** metric comparisons, influence factors by different metrics, final influence vs. built values, top sequence displacement curves, and optimal assembly sequence visualization.
 <p align="center">
 <img src="analysis_result_S3\comprehensive_analysis.png" alt="comprehensive_analysis" width="800"/>
 </p>
 
-Four scatter plots showing relationships between different metrics (maximum, range, and average displacement) and a histogram of combined metric values, demonstrating how these metrics correlate.
+**"Metrics Comparison:** Four scatter plots showing relationships between different metrics (maximum, range, and average displacement) and a histogram of combined metric values, demonstrating how these metrics correlate.
 <p align="center">
 <img src="analysis_result_S3/metrics_comparison.png" alt="Metrics Comparison" width="800"/>
 </p>
 
-Recommended assembly sequence: the top panel shows rods ranked by influence factor, while the bottom panel displays control values across assembly steps.
+**Recommended assembly sequence:** The top panel shows rods ranked by influence factor, while the bottom panel displays control values across assembly steps.
 <p align="center">
 <img src="analysis_result_S3\optimal_sequence.png" alt="optimal_sequence" width="800"/>
 </p>
 
 #### Validation： 
-As the result shown above the predicted best sequences is PREDICT = [#2, #4, #3, #0, #1, #8, #5, #7, #14, #9, #6, #10, #13, #11, #15, #12]
+As the result shown above the predicted best sequences is **PREDICT = [#2, #4, #3, #0, #1, #8, #5, #7, #14, #9, #6, #10, #13, #11, #15, #12]**
 
 Compare the sequence to the previous sequence we can see it's satable, effective, converge than avergae. Proven is a workable algorithm.
 
