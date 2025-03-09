@@ -60,32 +60,31 @@ Can be check at the file: <a href ="Installation Sequences Optimization\seq_anal
 #### Result:
 **Multiple analyses:** metric comparisons, influence factors by different metrics, final influence vs. built values, top sequence displacement curves, and optimal assembly sequence visualization.
 <p align="center">
-<img src="analysis_result_S3\comprehensive_analysis.png" alt="comprehensive_analysis" width="800"/>
+<img src="Installation Sequences Optimization\analysis_result_S3\comprehensive_analysis.png" alt="comprehensive_analysis" width="800"/>
 </p>
 
 **"Metrics Comparison:** Four scatter plots showing relationships between different metrics (maximum, range, and average displacement) and a histogram of combined metric values, demonstrating how these metrics correlate.
 <p align="center">
-<img src="analysis_result_S3/metrics_comparison.png" alt="Metrics Comparison" width="800"/>
+<img src="Installation Sequences Optimization\analysis_result_S3/metrics_comparison.png" alt="Metrics Comparison" width="800"/>
 </p>
 
 **Recommended assembly sequence:** The top panel shows rods ranked by influence factor, while the bottom panel displays control values across assembly steps.
 <p align="center">
-<img src="analysis_result_S3\optimal_sequence.png" alt="optimal_sequence" width="800"/>
+<img src="Installation Sequences Optimization\analysis_result_S3\optimal_sequence.png" alt="optimal_sequence" width="800"/>
 </p>
 
-#### Validation： 
-As the result shown above the predicted best sequences is **PREDICT = [#2, #4, #3, #0, #1, #8, #5, #7, #14, #9, #6, #10, #13, #11, #15, #12]**
-
-Compare the sequence to the previous sequence we can see it's satable, effective, converge than avergae. Proven is a workable algorithm.
-
-
-### (3) Generate Installation Guidelines:
-Use these rules to create helpful installation sequences for workers. Below are some sample cases.
+### (3) Validation and Generating Installation Guidelines:
+Compare the sequence to the previous sequence we can see it's more stable, effective in displacement converge. Proven is a workable algorithm. We able to use these rules to create helpful installation sequences for workers. Below are some sample cases.  
 ![re](https://github.com/user-attachments/assets/0d3591bd-e69c-4119-9ff3-c91725ae4cb9)
 ![re2](https://github.com/user-attachments/assets/8e3dc30a-0cfa-4555-93ca-3f177dcc7614)
 
 
 ## Optimization (2): Development of an automatic rod marking system.  
+This application supports custom-designed hardware for automatic rod marking, enabling precise, random-position labelling on weaving rods. The system specifically addresses challenges in manual rod marking for bending-active grid shell structures.  
+
+- **Installation Efficiency**: 33% reduced installation time through an improved rod labelling process, enhancing overall efficiency for weaving structure fabrication
+- **Enhanced User Experience**: Improved label design with color-coded system for easier rod identification and assembly
+
 ### **Design Draft**
 <div>
     <img src="https://github.com/user-attachments/assets/22eb9002-d08d-4fe4-802f-878a4dc6f411" alt="Machine Design Draft" width="40%" style="float: left"/>
@@ -94,13 +93,6 @@ Use these rules to create helpful installation sequences for workers. Below are 
 
 ### Final Machine
 <img src="https://github.com/user-attachments/assets/bfffeed1-4324-43eb-ad15-ed9dee3c3e99" alt="Final Machine"/>
-
-
-## Result Improvement
-This application supports custom-designed hardware for automatic rod marking, enabling precise, random-position labelling on weaving rods. The system specifically addresses challenges in manual rod marking for bending-active grid shell structures.  
-
-- **Installation Efficiency**: 33% reduced installation time through an improved rod labelling process, enhancing overall efficiency for weaving structure fabrication
-- **Enhanced User Experience**: Improved label design with color-coded system for easier rod identification and assembly
 
 ### Rod Specifications
 <img src="https://github.com/user-attachments/assets/3492cd20-0831-4f46-89f5-f3aa6bb9e6e2" alt="Rod Section" width="400"/>
