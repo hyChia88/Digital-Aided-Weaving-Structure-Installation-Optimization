@@ -547,49 +547,65 @@ def run_demonstration(tags_data=None, displacement_data=None, built_values=None)
     if built_values is None:
         built_values = built_values_3
     
+    output_dir = "analysis_result"
+
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # Load data
+    print("Loading data...")
+    print(f"Loaded {len(tags_data)} sequences with {len(built_values)} unique rods")
+    
     # Initialize optimizer
+    print("Initializing optimizer...")
     optimizer = BendingActiveOptimizer(tags_data, displacement_data, built_values)
     
-    # Get and display optimal sequence
+    # Get optimal sequence
     optimal_sequence = optimizer.predict_optimal_sequence()
-    print("Optimal Assembly Sequence:")
+    print("\nPredicted optimal assembly sequence:")
     for i, rod in enumerate(optimal_sequence):
         print(f"{i+1}. {rod} (Control Value: {built_values.get(rod, 0):.3f})")
     
-    # Create visualizations
-    print("\nCreating visualizations...")
+    # Create comprehensive visualization
+    print("\nCreating comprehensive visualization...")
+    fig = optimizer.visualize_comprehensive_analysis()
+    output_path = os.path.join(output_dir, "comprehensive_analysis.png")
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
     
-    # Comprehensive analysis dashboard
-    fig_comprehensive = optimizer.visualize_comprehensive_analysis()
-    plt.figure(fig_comprehensive.number)
-    plt.savefig("comprehensive_analysis.png", dpi=300, bbox_inches='tight')
-    
-    # Metrics comparison
+    # Compare metrics
+    print("Comparing different optimization metrics...")
     fig_metrics = optimizer.visualize_metrics_comparison()
     plt.figure(fig_metrics.number)
-    plt.savefig("metrics_comparison.png", dpi=300, bbox_inches='tight')
+    output_path = os.path.join(output_dir, "metrics_comparison.png")
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
     
-    # Top sequences
-    fig_top_seq = optimizer.visualize_top_sequences(metric_type='combined', n=5)
-    plt.figure(fig_top_seq.number)
-    plt.savefig("top_sequences_combined.png", dpi=300, bbox_inches='tight')
+    # Visualize top sequences
+    print("Visualizing top sequences...")
+    for metric in ['max', 'range', 'sum', 'combined']:
+        fig_seq = optimizer.visualize_top_sequences(metric_type=metric, n=5)
+        plt.figure(fig_seq.number)
+        output_path = os.path.join(output_dir, f"top_sequences_{metric}.png")
+        plt.savefig(output_path, dpi=300, bbox_inches='tight')
     
-    # Final influence
-    fig_influence = optimizer.visualize_final_influence()
-    plt.figure(fig_influence.number)
-    plt.savefig("final_influence.png", dpi=300, bbox_inches='tight')
+    # Visualize influence factors
+    print("Visualizing rod influence factors...")
+    fig_infl = optimizer.visualize_final_influence()
+    plt.figure(fig_infl.number)
+    output_path = os.path.join(output_dir, "final_influence.png")
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
     
-    # Optimal sequence
-    fig_optimal = optimizer.visualize_optimal_sequence()
-    plt.figure(fig_optimal.number)
-    plt.savefig("optimal_sequence.png", dpi=300, bbox_inches='tight')
+    # Visualize optimal sequence
+    print("Visualizing optimal sequence...")
+    fig_opt = optimizer.visualize_optimal_sequence()
+    plt.figure(fig_opt.number)
+    output_path = os.path.join(output_dir, "optimal_sequence.png")
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
     
-    print("\nVisualization complete! All figures have been saved.")
+    print(f"\nDemonstration complete! All visualizations have been saved to {os.path.abspath(output_dir)}")
     
-    # Show plots
+    # Show all figures
     plt.show()
     
-    # Return optimizer and optimal sequence
     return optimizer, optimal_sequence
 
 # Run the demonstration if this script is executed directly

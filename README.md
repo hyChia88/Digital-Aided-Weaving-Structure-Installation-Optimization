@@ -43,15 +43,41 @@ The system transforms the previously manual task of rod labelling into an automa
 
 ## Optimization (1): Optimization of the installation sequences 
 ### (1) Simulate the Installation Process:
-Run simulations to track how structures move and change during installation
+Run massive simulations to track how structures move and change during installation. Collect displacement data for further analysis. Pipeline built in grsshopper, rhino and kangaroo.
 ![image](https://github.com/user-attachments/assets/a81525ca-91e8-43f2-b83a-287e1f0bd709)
-
-### (2) Analysis of Sequence & Rod Performance
-Compare changes in sequence and displacement to understand the basic rules of the process. 
 ![image](https://github.com/user-attachments/assets/6197931a-54d7-44e3-aabd-e488dbe618e2)
 
+### (2) Analysis of Sequence & Rod Performance
+Compare changes in sequence and displacement to understand the basic rules of the process.  
+Can be check at the file: Installation Sequences Optimization\seq_analysis.py 
+- tags_data: Dictionary containing different assembly sequences, where each sequence lists the rods in the order they are assembled.
+- data: Corresponding displacement values for each sequence, recording the maximum displacement at each step.
+- built_values: A predefined score for each rod indicating its ease of construction, comprehensively considering rod length, shape complexity, and number of nodes.
+
+#### Result:
+Multiple analyses: metric comparisons, influence factors by different metrics, final influence vs. built values, top sequence displacement curves, and optimal assembly sequence visualization.
+<p align="center">
+<img src="analysis_result_S3\comprehensive_analysis.png" alt="comprehensive_analysis" width="800"/>
+</p>
+
+Four scatter plots showing relationships between different metrics (maximum, range, and average displacement) and a histogram of combined metric values, demonstrating how these metrics correlate.
+<p align="center">
+<img src="analysis_result_S3/metrics_comparison.png" alt="Metrics Comparison" width="800"/>
+</p>
+
+Recommended assembly sequence: the top panel shows rods ranked by influence factor, while the bottom panel displays control values across assembly steps.
+<p align="center">
+<img src="analysis_result_S3\optimal_sequence.png" alt="optimal_sequence" width="800"/>
+</p>
+
+#### Validation： 
+As the result shown above the predicted best sequences is PREDICT = [#2, #4, #3, #0, #1, #8, #5, #7, #14, #9, #6, #10, #13, #11, #15, #12]
+
+Compare the sequence to the previous sequence we can see it's satable, effective, converge than avergae. Proven is a workable algorithm.
+
+
 ### (3) Generate Installation Guidelines:
-Use these rules to create helpful installation sequences for workers. Below are some sample cases.  
+Use these rules to create helpful installation sequences for workers. Below are some sample cases.
 ![re](https://github.com/user-attachments/assets/0d3591bd-e69c-4119-9ff3-c91725ae4cb9)
 ![re2](https://github.com/user-attachments/assets/8e3dc30a-0cfa-4555-93ca-3f177dcc7614)
 
